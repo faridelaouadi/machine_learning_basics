@@ -11,6 +11,7 @@ from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 from matplotlib import style
 import datetime
+import pickle
 
 style.use('ggplot')
 
@@ -40,16 +41,23 @@ df.dropna(inplace=True)
 y = np.array(df['label'])
 
 X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y, test_size=0.2) #20 percent of data is the test data
-clf = LinearRegression(n_jobs=-1) #n jobs is the number of jobs it can run in parallel, -1 means run as many as you can
-clf.fit(X_train, y_train)
+#clf = LinearRegression(n_jobs=-1) #n jobs is the number of jobs it can run in parallel, -1 means run as many as you can
+#clf.fit(X_train, y_train)
+#confidence = clf.score(X_test, y_test)
+
+#we have now stored the model in a pickle file so that we dont have to retrain the classifier every single time we want to make a prediction
+
+#with open('linearregression.pickle','wb') as f:
+    #pickle.dump(clf, f)
+
+pickle_in = open('linearregression.pickle','rb')
+clf = pickle.load(pickle_in)
+
+
+
 confidence = clf.score(X_test, y_test)
-
-
 forecast_set = clf.predict(X_lately) #making predictions for 30 days
 print(forecast_set, confidence, forecast_out)
-
-
-
 
 df['Forecast'] = np.nan
 
