@@ -1,12 +1,5 @@
-# machine_learning_basics
-Python implementation of the algorithms covered in Coursera's ML course
-
-Linear regression using scikitlearn
+Linear regression using scikitlearn (/regression)
 =================
-
-see code in file "regression.py"
-Steps I took
----
 
 ![](regression/pic.png)
 
