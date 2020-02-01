@@ -1,4 +1,4 @@
-Linear regression using scikitlearn (/regression)
+[Linear regression using scikitlearn](../regression)
 =================
 
 ![](regression/pic.png)
@@ -9,3 +9,6 @@ Linear regression using scikitlearn (/regression)
 4) Plotted results
 5) Stored the model in a pickle file so i wouldn't have to retrain everytime i wanted to predict
 6) Modified the code to load in pickle file instead of retrain.
+
+[Linear regression from scratch](../regression_from_scratch)
+=================
