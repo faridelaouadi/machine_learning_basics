@@ -12,3 +12,10 @@
 
 [Linear regression from scratch](/regression_from_scratch)
 =================
+
+![](regression_from_scratch/pic.png)
+
+1) Got the formulas for needed to find the gradient and intercept and coded a function for it
+2) Created 2 test arrays to use and plotted the data in matplotlib
+3) Plotted the regression line to see if it fit the data
+4) Coded a function for the coefficient of determination to see if our line fit the data well
