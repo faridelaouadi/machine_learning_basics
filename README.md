@@ -28,3 +28,19 @@
   4. Coded a function for the coefficient of determination to see if our line fit the data well
 
 </details>
+
+<details>
+  <summary>K Nearest Neighbors</summary>
+
+  [KNN](/knn)
+  =================
+
+  1. Retrieved dataset from UCI database online
+  2. Replaced all the empty columns with a fixed value
+  3. Dropped the id column as it is not contributing any useful info to our algorithm
+  4. Defined features and target variable
+  5. Split the dataset into training and test set
+  6. Ran the KNN classifier from scikitlearn
+
+
+</details>
