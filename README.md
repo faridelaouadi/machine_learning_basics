@@ -126,8 +126,10 @@ Notice: The code from this repository was made by following a youtube series by 
 
 <details>
   <summary>Mean Shift</summary>
+
   [Mean Shift](/meanshift)
   =================
+
   ![](meanshift/pic.png)
   1. We generate 100 data examples around our defined centres
   2. We run meanshift on these generated points
@@ -136,8 +138,10 @@ Notice: The code from this repository was made by following a youtube series by 
 
 <details>
   <summary>Mean Shift from scratch</summary>
+
   [Mean Shift](/meanshift_from_scratch)
   =================
+  
   ![](meanshift_from_scratch/pic.png)
   1. Set all points as centroids at first
   2. Loop through all the points within the radius of each centroid and group them
