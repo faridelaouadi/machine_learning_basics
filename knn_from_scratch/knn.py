@@ -21,7 +21,7 @@ def knn(data, predict, k=3):
 
 dataset = {'k':[[1,2],[2,3],[3,1]], 'r':[[6,5],[7,7],[8,6]]}
 new_features = [5,7]
-# same as:
+
 for i in dataset:
     for z in dataset[i]:
         plt.scatter(z[0],z[1],s=100,color=i)
