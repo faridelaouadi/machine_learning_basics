@@ -1,3 +1,5 @@
+Notice: The code from this repository was made by following a youtube series by Sentdex. The code is very similar to his and i have only made minor edits to suit my datasets/preferences.
+
 <details>
   <summary>Linear Regression with scikitlearn</summary>
 
@@ -58,6 +60,31 @@
   3. Chose the top k elements from the sorted list
   4. Plotted the data using matplotlib, with the new element as a cross in the colour of the group it is in
 
-  The accuracy of mine and scikitlearn's algorithm would be near identical when run on a large enough sample size. However the implementation that scikitlearn has is much more optimised than mine. Firstly, with mine i am doing the euclidean distance from test point to all the dataset points with runtime O(n) however they are using a radius technique where they consistently expand a radius and find the closest points like that. They also use multithreaded code to run their code much faster by running code in parallel. 
+  The accuracy of mine and scikitlearn's algorithm would be near identical when run on a large enough sample size. However the implementation that scikitlearn has is much more optimised than mine. Firstly, with mine i am doing the euclidean distance from test point to all the dataset points with runtime O(n) however they are using a radius technique where they consistently expand a radius and find the closest points like that. They also use multithreaded code to run their code much faster by running code in parallel.
+
+</details>
+
+<details>
+  <summary>SVM</summary>
+
+  [SVM](/svm)
+  =================
+
+  1. Retrieved dataset from UCI database online
+  2. Replaced all the empty columns with a fixed value
+  3. Dropped the id column as it is not contributing any useful info to our algorithm
+  4. Defined features and target variable
+  5. Split the dataset into training and test set
+  6. Ran the SVM classifier from scikitlearn
+
+</details>
+
+<details>
+  <summary>SVM from scratch</summary>
+
+  [SVM](/svm_from_scratch)
+  =================
+
+  ![](svm_from_scratch/pic.png)
 
 </details>
