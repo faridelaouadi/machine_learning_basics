@@ -140,7 +140,8 @@ Notice: The code from this repository was made by following a youtube series by 
   =================
   ![](meanshift_from_scratch/pic.png)
   1. Set all points as centroids at first
-  2. loop through all the points within the radius of each centroid and group them
-  3. find the mean centroid of all the the points within the radius
+  2. Loop through all the points within the radius of each centroid and group them
+  3. Find the mean centroid of all the the points within the radius
   4. Repeat the process until you converge
+  5. With this implementation, we choose the radius however we can also implement an algorithm to automatically generate it
 </details>
