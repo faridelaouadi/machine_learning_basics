@@ -107,3 +107,19 @@ Notice: The code from this repository was made by following a youtube series by 
 
 
 </details>
+
+<details>
+  <summary>K means from scratch</summary>
+
+  [K means from scratch](/kmeans_from_scratch)
+  =================
+
+  ![](kmeans_from_scratch/pic.png)
+  1. Define the centroids
+  2. Work out distances to each point and classify into k groups
+  3. Find the euclidean mean of the points in each group
+  4. Repeat the process until you dont see any movement in centroids or have reached the max iterations
+  5. Plot centroids and data
+
+
+</details>
