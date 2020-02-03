@@ -3,7 +3,7 @@ from matplotlib import style
 style.use('ggplot')
 import numpy as np
 from sklearn.cluster import KMeans
-from sklearn import preprocessing, model_selection
+from sklearn import preprocessing
 import pandas as pd
 
 '''
@@ -25,13 +25,13 @@ home.dest Home/Destination
 
 df = pd.read_excel('titanic.xls')
 #print(df.head())
-df.drop(['body','name'], 1, inplace=True) #dropping columns that arent contributing to insight
-df.fillna(0, inplace=True)#replacing all the empty data
-
+df.drop(['body','name'], 1, inplace=True)
+df.fillna(0, inplace=True)
+#print(df.head())
 
 def handle_non_numerical_data(df):
-    #basically this function takes a column and encodes it numerically. e.g for female male ... we will encode female : 1 and male : 0 etc
     columns = df.columns.values
+
     for column in columns:
         text_digit_vals = {}
         def convert_to_int(val):
@@ -51,4 +51,22 @@ def handle_non_numerical_data(df):
     return df
 
 df = handle_non_numerical_data(df)
-print(df.head())
+
+
+df.drop(['sex','boat'], 1, inplace=True)
+X = np.array(df.drop(['survived'], 1).astype(float))
+X = preprocessing.scale(X)
+y = np.array(df['survived'])
+
+clf = KMeans(n_clusters=2)
+clf.fit(X)
+
+correct = 0
+for i in range(len(X)):
+    predict_me = np.array(X[i].astype(float))
+    predict_me = predict_me.reshape(-1, len(predict_me))
+    prediction = clf.predict(predict_me)
+    if prediction[0] == y[i]:
+        correct += 1
+
+print(correct/len(X))
