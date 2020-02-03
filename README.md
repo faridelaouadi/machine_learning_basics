@@ -123,3 +123,17 @@ Notice: The code from this repository was made by following a youtube series by 
 
 
 </details>
+
+<details>
+  <summary>Mean Shift</summary>
+
+  [Mean Shift](/meanshift)
+  =================
+
+  ![](meanshift/pic.png)
+  1. We generate 100 data examples around our defined centres
+  2. We run meanshift on these generated points
+  3. Plot our points and centroids in 3d using matplotlib
+
+
+</details>
