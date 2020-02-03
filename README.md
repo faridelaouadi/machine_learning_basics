@@ -46,7 +46,7 @@
 </details>
 
 <details>
-  <summary>K Nearest Neighbors from Scratch</summary>
+  <summary>K Nearest Neighbors from Scratch (with comparison of scikitlearn)</summary>
 
   [KNN](/knn_from_scratch)
   =================
@@ -57,5 +57,7 @@
   2. Sorted the list
   3. Chose the top k elements from the sorted list
   4. Plotted the data using matplotlib, with the new element as a cross in the colour of the group it is in
+
+  The accuracy of mine and scikitlearn's algorithm would be near identical when run on a large enough sample size. However the implementation that scikitlearn has is much more optimised than mine. Firstly, with mine i am doing the euclidean distance from test point to all the dataset points with runtime O(n) however they are using a radius technique where they consistently expand a radius and find the closest points like that. They also use multithreaded code to run their code much faster by running code in parallel. 
 
 </details>
