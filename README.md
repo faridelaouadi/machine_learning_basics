@@ -88,3 +88,22 @@ Notice: The code from this repository was made by following a youtube series by 
   ![](svm_from_scratch/pic.png)
 
 </details>
+
+<details>
+  <summary>K means</summary>
+
+  [K means](/kmeans)
+  =================
+
+  ![](kmeans/pic.png)
+  1. Read in dataset using pandas from excel file
+  2. Do some data formatting like dropping useless columns and removing empty cells
+  3. Converted all non numerical data into quantitative data
+  4. Removed the survived column from the input features and done feature scaling
+  5. Made the survived column the target column
+  6. Ran K means with 2 clusters
+  7. Split the data into 2 clusters
+  8. Predicted whether people would survive depending on their other qualities
+
+
+</details>

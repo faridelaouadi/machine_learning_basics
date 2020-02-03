@@ -25,7 +25,7 @@ home.dest Home/Destination
 
 df = pd.read_excel('titanic.xls')
 #print(df.head())
-df.drop(['body','name'], 1, inplace=True)
+df.drop(['body','name','sex','boat'], 1, inplace=True)
 df.fillna(0, inplace=True)
 #print(df.head())
 
@@ -53,7 +53,6 @@ def handle_non_numerical_data(df):
 df = handle_non_numerical_data(df)
 
 
-df.drop(['sex','boat'], 1, inplace=True)
 X = np.array(df.drop(['survived'], 1).astype(float))
 X = preprocessing.scale(X)
 y = np.array(df['survived'])
