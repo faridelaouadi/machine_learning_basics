@@ -126,14 +126,21 @@ Notice: The code from this repository was made by following a youtube series by 
 
 <details>
   <summary>Mean Shift</summary>
-
   [Mean Shift](/meanshift)
   =================
-
   ![](meanshift/pic.png)
   1. We generate 100 data examples around our defined centres
   2. We run meanshift on these generated points
   3. Plot our points and centroids in 3d using matplotlib
+</details>
 
-
+<details>
+  <summary>Mean Shift from scratch</summary>
+  [Mean Shift](/meanshift_from_scratch)
+  =================
+  ![](meanshift_from_scratch/pic.png)
+  1. Set all points as centroids at first
+  2. loop through all the points within the radius of each centroid and group them
+  3. find the mean centroid of all the the points within the radius
+  4. Repeat the process until you converge
 </details>
